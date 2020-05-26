@@ -18,10 +18,12 @@ from django.urls import path
 from django.conf.urls import include
 from django.conf import settings
 from django.conf.urls.static import static
+from django.http import HttpResponseRedirect
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('main.urls')),
+    path('', lambda r: HttpResponseRedirect('api/')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 if settings.DEBUG:
