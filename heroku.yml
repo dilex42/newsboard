@@ -1,5 +1,3 @@
 build:
     docker:
-      web: newsboard/Dockerfile
-run:
-    web: honcho start
+      web: newsboard/HerokuDockerfile
