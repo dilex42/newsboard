@@ -7,7 +7,7 @@ run:
       command:
          - python worker.py
       image: web
-release:
-    image: web
-    command:
-      - ./entrypoint.sh
+# release:
+#     image: web
+#     command:
+#       - ./entrypoint.sh
