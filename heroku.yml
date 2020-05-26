@@ -6,6 +6,7 @@ run:
     worker:
       command:
          - python newsboard/worker.py
+      image: web
 # release:
 #     image: web
 #       command:
