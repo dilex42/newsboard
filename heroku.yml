@@ -1,5 +1,5 @@
 build:
     docker:
       web: newsboard/Dockerfile
-  run:
+run:
     web: honcho start
