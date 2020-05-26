@@ -17,4 +17,4 @@ RUN useradd newsboard && chown -R newsboard /code
 USER newsboard
 
 EXPOSE 8000
-CMD exec gunicorn newsboard.wsgi:application --bind 0.0.0.0:8000 --workers 1 --reload --timeout 50 --threads=1 --worker-class=gthread --worker-tmp-dir /dev/shm
+# CMD exec gunicorn newsboard.wsgi:application --bind 0.0.0.0:8000 --workers 1 --reload --timeout 50 --threads=1 --worker-class=gthread --worker-tmp-dir /dev/shm

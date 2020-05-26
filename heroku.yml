@@ -1,3 +1,6 @@
 build:
     docker:
       web: newsboard/HerokuDockerfile
+run:
+    web: gunicorn newsboard.wsgi:application --bind 0.0.0.0:8000 --workers 1 --reload --timeout 50 --threads=1 --worker-class=gthread --worker-tmp-dir /dev/shm
+    worker: python newsboard/worker.py
