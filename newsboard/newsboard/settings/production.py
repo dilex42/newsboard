@@ -7,5 +7,5 @@ ALLOWED_HOSTS = [
     '127.0.0.1',
     'localhost',
     '0.0.0.0',
-    'http://newsboard42.herokuapp.com'
+    'newsboard42.herokuapp.com'
 ]
