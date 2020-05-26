@@ -9,5 +9,5 @@ run:
       image: web
 release:
     image: web
-      command:
-         - ./entrypoint.sh
+    command:
+      - ./entrypoint.sh
